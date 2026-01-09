@@ -50,14 +50,14 @@ export default function HeroCarousel() {
           <div className="relative z-10 h-full">
             <div className="flex items-center min-h-[110vh] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
               <div className="max-w-4xl">
-                <p className="text-xs sm:text-sm md:text-base font-medium text-red-400 mb-4 md:mb-6 tracking-[0.4em] uppercase">
+                <p className="text-xs sm:text-sm md:text-base font-medium text-blue-400 mb-4 md:mb-6 tracking-[0.4em] uppercase">
                   AI Executive Guide
                 </p>
 
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white leading-snug mb-6 md:mb-10">
                   <div className="headline-line mb-1.5 md:mb-3">The Pragmatic</div>
                   <div className="headline-line mb-1.5 md:mb-3">CEO&apos;s Guide to</div>
-                  <div className="headline-line bg-gradient-to-r from-red-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+                  <div className="headline-line bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 text-transparent bg-clip-text">
                     AI
                   </div>
                 </h1>
@@ -88,13 +88,13 @@ export default function HeroCarousel() {
           <div className="relative z-10 h-full">
             <div className="flex items-center min-h-[110vh] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
               <div className="max-w-4xl">
-                <p className="text-xs sm:text-sm md:text-base font-medium text-red-400 mb-4 md:mb-6 tracking-[0.4em] uppercase">
+                <p className="text-xs sm:text-sm md:text-base font-medium text-blue-400 mb-4 md:mb-6 tracking-[0.4em] uppercase">
                   Innovation
                 </p>
 
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white leading-snug mb-6 md:mb-10">
                   <div className="mb-1.5 md:mb-3">Transform Your</div>
-                  <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text">
+                  <div className="bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 text-transparent bg-clip-text">
                     Digital Future
                   </div>
                 </h1>

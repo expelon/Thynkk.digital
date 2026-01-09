@@ -9,7 +9,6 @@ const menuItems = ['Services', 'Solutions', 'Industries', 'Works', 'About', 'Car
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDarkSectionInView, setIsDarkSectionInView] = useState(true);
   const navRef = useRef<HTMLElement>(null);
   const menuItemsRef = useRef<HTMLDivElement>(null);
   const iconsRef = useRef<HTMLDivElement>(null);
@@ -50,49 +49,6 @@ export default function Navbar() {
     return () => ctx.revert();
   }, []);
 
-  useEffect(() => {
-    let animationFrame = 0;
-
-    const getNavHeight = () => navRef.current?.offsetHeight ?? 80;
-
-    const updateState = () => {
-      const sections = Array.from(
-        document.querySelectorAll<HTMLElement>('[data-nav-theme="dark"]')
-      );
-
-      if (sections.length === 0) {
-        setIsDarkSectionInView(false);
-        return;
-      }
-
-      const navHeight = getNavHeight();
-      const threshold = navHeight * 0.5;
-      const visible = sections.some((section) => {
-        const rect = section.getBoundingClientRect();
-        return rect.top <= threshold && rect.bottom >= threshold;
-      });
-      setIsDarkSectionInView(visible);
-    };
-
-    const handleScroll = () => {
-      if (animationFrame) cancelAnimationFrame(animationFrame);
-      animationFrame = window.requestAnimationFrame(updateState);
-    };
-
-    const handleResize = () => {
-      updateState();
-    };
-    updateState();
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      if (animationFrame) cancelAnimationFrame(animationFrame);
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   useEffect(() => {
     if (isMobileMenuOpen) {
@@ -123,11 +79,7 @@ export default function Navbar() {
     <>
       <nav
         ref={navRef}
-        className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-500 ${
-          isDarkSectionInView
-            ? 'bg-transparent border-transparent'
-            : 'bg-white shadow-lg border-b border-black/5'
-        }`}
+        className="fixed top-0 left-0 right-0 z-50 bg-black/10 backdrop-blur-xl border-b border-white/10"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
@@ -151,11 +103,7 @@ export default function Navbar() {
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className={`nav-item text-sm font-medium transition-colors duration-200 ${
-                    isDarkSectionInView
-                      ? 'text-white/80 hover:text-white'
-                      : 'text-gray-900/80 hover:text-gray-900'
-                  }`}
+                  className="nav-item text-sm font-medium text-white/80 hover:text-white transition-colors duration-200"
                 >
                   {item}
                 </a>
@@ -167,39 +115,23 @@ export default function Navbar() {
               className="flex items-center space-x-4 lg:space-x-6"
             >
               <button
-                className={`nav-icon hidden sm:block transition-colors duration-200 ${
-                  isDarkSectionInView
-                    ? 'text-white/80 hover:text-white'
-                    : 'text-gray-900/80 hover:text-gray-900'
-                }`}
+                className="nav-icon hidden sm:block text-white/80 hover:text-white transition-colors duration-200"
               >
                 <Phone className="w-5 h-5" />
               </button>
               <button
-                className={`nav-icon hidden sm:block transition-colors duration-200 ${
-                  isDarkSectionInView
-                    ? 'text-white/80 hover:text-white'
-                    : 'text-gray-900/80 hover:text-gray-900'
-                }`}
+                className="nav-icon hidden sm:block text-white/80 hover:text-white transition-colors duration-200"
               >
                 <Search className="w-5 h-5" />
               </button>
               <button
-                className={`nav-icon hidden sm:block transition-colors duration-200 ${
-                  isDarkSectionInView
-                    ? 'text-white/80 hover:text-white'
-                    : 'text-gray-900/80 hover:text-gray-900'
-                }`}
+                className="nav-icon hidden sm:block text-white/80 hover:text-white transition-colors duration-200"
               >
                 <Bookmark className="w-5 h-5" />
               </button>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={`nav-icon lg:hidden transition-colors duration-200 ${
-                  isDarkSectionInView
-                    ? 'text-white/80 hover:text-white'
-                    : 'text-gray-900/80 hover:text-gray-900'
-                }`}
+                className="nav-icon lg:hidden text-white/80 hover:text-white transition-colors duration-200"
               >
                 {isMobileMenuOpen ? (
                   <X className="w-6 h-6" />
