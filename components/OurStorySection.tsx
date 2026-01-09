@@ -2,14 +2,14 @@
 
 export default function OurStorySection() {
   const stats = [
-    { value: '700+', label: 'High-Impact Projects', position: 'top-16 -left-6' },
+    { value: '700+', label: 'High-Impact Projects', position: 'top-16 left-3 sm:-left-6' },
     { value: '100+', label: 'Brand Connections', position: 'bottom-16 right-8' },
   ];
 
   return (
     <section
       data-nav-theme="dark"
-      className="relative bg-black text-white"
+      className="relative overflow-hidden bg-black text-white"
       aria-labelledby="our-story-heading"
     >
       <div className="mx-auto flex min-h-[90vh] max-w-6xl flex-col gap-16 px-6 py-24 sm:px-10 lg:flex-row lg:items-center lg:gap-24">

@@ -3,6 +3,9 @@ import HeroCarousel from '@/components/HeroCarousel';
 import ScrollRevealSection from '@/components/ScrollRevealSection';
 import OurStorySection from '@/components/OurStorySection';
 import BoldChallengeSection from '@/components/BoldChallengeSection';
+import WhatWeDoSection from '@/components/WhatWeDoSection';
+import UnlockGenAISection from '@/components/UnlockGenAISection';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -12,6 +15,9 @@ export default function Home() {
       <ScrollRevealSection />
       <BoldChallengeSection />
       <OurStorySection />
+      <WhatWeDoSection />
+      <UnlockGenAISection />
+      <Footer />
     </main>
   );
 }
