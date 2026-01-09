@@ -33,7 +33,7 @@ export default function UnlockGenAISection() {
               Unlock The
               <br />
               Power of{' '}
-              <span className="bg-gradient-to-r from-indigo-400 via-cyan-300 to-fuchsia-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#025CFE] via-[#025CFE] to-[#025CFE] bg-clip-text text-transparent">
                 Gen AI
               </span>
             </h2>
