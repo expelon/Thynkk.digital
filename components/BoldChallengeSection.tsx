@@ -85,8 +85,8 @@ function PillButton({
       className={
         'rounded-full border px-4 py-2 text-sm font-medium transition-colors ' +
         (active
-          ? 'border-red-600 bg-red-50 text-red-700'
-          : 'border-zinc-200 bg-white text-red-600 hover:border-red-300 hover:bg-red-50')
+          ? 'border-[#025CFE] bg-[#025CFE]/10 text-[#025CFE]'
+          : 'border-zinc-200 bg-white text-[#025CFE] hover:border-[#025CFE]/70 hover:bg-[#025CFE]/10')
       }
     >
       {label}
@@ -194,7 +194,7 @@ export default function BoldChallengeSection() {
                           handleSelectNeed(item);
                         }
                       }}
-                      className="text-left font-semibold text-red-600 hover:underline"
+                      className="text-left font-semibold text-[#025CFE] hover:underline"
                     >
                       {item}
                     </button>
@@ -297,7 +297,7 @@ export default function BoldChallengeSection() {
               <button
                 type="button"
                 onClick={reset}
-                className="h-10 shrink-0 rounded-sm border border-zinc-200 px-10 text-xs font-semibold text-red-600 hover:bg-zinc-50"
+                className="h-10 shrink-0 rounded-sm border border-zinc-200 px-10 text-xs font-semibold text-[#025CFE] hover:bg-zinc-50"
               >
                 RESET
               </button>
@@ -325,7 +325,7 @@ export default function BoldChallengeSection() {
                     </p>
                     <a
                       href={rec.href}
-                      className="mt-8 inline-flex items-center text-sm font-semibold text-red-600"
+                      className="mt-8 inline-flex items-center text-sm font-semibold text-[#025CFE]"
                     >
                       Read More
                       <span className="ml-2">›</span>
