@@ -89,6 +89,42 @@
     animation: hero-zoom 18s ease-in-out infinite alternate;
     transform-origin: center;
   }
+
+  .orb-float {
+    animation: orb-float 7s ease-in-out infinite;
+    transform-style: preserve-3d;
+  }
+
+  .orb-rotate {
+    animation: orb-rotate 14s linear infinite;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  .orb-sheen {
+    animation: orb-sheen 5.5s ease-in-out infinite;
+    will-change: transform, opacity;
+  }
+
+  .orb-ring-spin {
+    animation: orb-ring-spin 12s linear infinite;
+    will-change: transform;
+  }
+
+  .orb-ring-spin-rev {
+    animation: orb-ring-spin-rev 16s linear infinite;
+    will-change: transform;
+  }
+
+  .orb-core {
+    animation: orb-core 3.5s ease-in-out infinite;
+    will-change: transform, filter, opacity;
+  }
+
+  .orb-particles {
+    animation: orb-particles 6s ease-in-out infinite;
+    will-change: opacity, transform;
+  }
 }
 
 @keyframes hero-zoom {
@@ -97,5 +133,92 @@
   }
   to {
     transform: scale(1.15);
+  }
+}
+
+@keyframes orb-float {
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(12deg) rotateY(-10deg);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0) rotateX(16deg) rotateY(-4deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotateX(12deg) rotateY(-10deg);
+  }
+}
+
+@keyframes orb-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orb-sheen {
+  0% {
+       transform: translate3d(-18%, -10%, 0) rotate(18deg);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translate3d(10%, 8%, 0) rotate(22deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate3d(-18%, -10%, 0) rotate(18deg);
+    opacity: 0.35;
+  }
+}
+
+@keyframes orb-ring-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orb-ring-spin-rev {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes orb-core {
+  0% {
+    transform: translate3d(-50%, -50%, 0) scale(0.96);
+    opacity: 0.75;
+    filter: blur(4px);
+  }
+  50% {
+    transform: translate3d(-50%, -50%, 0) scale(1.03);
+    opacity: 0.95;
+    filter: blur(2px);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) scale(0.96);
+    opacity: 0.75;
+    filter: blur(4px);
+  }
+}
+
+@keyframes orb-particles {
+  0% {
+    opacity: 0.35;
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.65;
+    transform: translate3d(0, -6px, 0);
+  }
+  100% {
+    opacity: 0.35;
+    transform: translate3d(0, 0, 0);
   }
 }

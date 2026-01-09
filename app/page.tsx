@@ -1,7 +1,8 @@
 import Navbar from '@/components/Navbar';
 import HeroCarousel from '@/components/HeroCarousel';
-import BoldChallengeSection from '@/components/BoldChallengeSection';
 import ScrollRevealSection from '@/components/ScrollRevealSection';
+import OurStorySection from '@/components/OurStorySection';
+import BoldChallengeSection from '@/components/BoldChallengeSection';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroCarousel />
       <ScrollRevealSection />
       <BoldChallengeSection />
+      <OurStorySection />
     </main>
   );
 }

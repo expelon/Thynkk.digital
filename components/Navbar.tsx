@@ -51,20 +51,20 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    const sections = Array.from(
-      document.querySelectorAll<HTMLElement>('[data-nav-theme="dark"]')
-    );
-
-    if (sections.length === 0) {
-      setIsDarkSectionInView(false);
-      return;
-    }
-
     let animationFrame = 0;
 
     const getNavHeight = () => navRef.current?.offsetHeight ?? 80;
 
     const updateState = () => {
+      const sections = Array.from(
+        document.querySelectorAll<HTMLElement>('[data-nav-theme="dark"]')
+      );
+
+      if (sections.length === 0) {
+        setIsDarkSectionInView(false);
+        return;
+      }
+
       const navHeight = getNavHeight();
       const threshold = navHeight * 0.5;
       const visible = sections.some((section) => {
