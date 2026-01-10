@@ -13,12 +13,13 @@ export const metadata: Metadata = {
   publisher: 'thynkk.digital',
   openGraph: {
     title: 'thynkk.digital - Strategy, Design & Technology',
-    description: 'Discover the intersections of strategy, design, and technology. We craft visual stories that resonate and turn hidden opportunities into experiences that move your business forward.',
-    url: 'https://thynkk.digital',
+    description:
+      'Discover the intersections of strategy, design, and technology. We craft visual stories that resonate and turn hidden opportunities into experiences that move your business forward.',
+    url: 'https://thynkk-digital-three.vercel.app',
     siteName: 'thynkk.digital',
     images: [
       {
-        url: '/icon.png',
+        url: 'https://thynkk-digital-three.vercel.app/icon.png',
         width: 1200,
         height: 630,
         alt: 'thynkk.digital - Strategy, Design & Technology',
@@ -30,10 +31,11 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'thynkk.digital - Strategy, Design & Technology',
-    description: 'Discover the intersections of strategy, design, and technology. We craft visual stories that resonate and turn hidden opportunities into experiences that move your business forward.',
+    description:
+      'Discover the intersections of strategy, design, and technology. We craft visual stories that resonate and turn hidden opportunities into experiences that move your business forward.',
     images: [
       {
-        url: '/icon.png',
+        url: 'https://thynkk-digital-three.vercel.app/icon.png',
         alt: 'thynkk.digital - Strategy, Design & Technology',
       },
     ],
