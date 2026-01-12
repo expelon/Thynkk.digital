@@ -87,7 +87,7 @@ export default function Navbar() {
               className="nav-logo flex items-center"
             >
               <Image
-                src="/logo.png"
+                src="/logo2.png"
                 alt="Logo"
                 width={120}
                 height={40}
