@@ -149,56 +149,110 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative hidden lg:block">
-          <div className="flex h-[520px] gap-6 overflow-hidden">
-            {/* Column 1 - scrolls up */}
-            <div className="hero-column hero-column-up w-1/2">
-              {[1, 2].map((loop) => (
-                <div key={loop} className="flex flex-col gap-6">
-                  <div className="hero-card overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
-                    <div className="relative aspect-[16/11]">
-                      <Image src="/hero1.webp" alt="Preview" fill sizes="(min-width:1024px) 360px, 100vw" className="object-cover" />
+        <div className="relative">
+          <div className="lg:hidden">
+            <div className="flex flex-col gap-6 overflow-hidden">
+              <div className="overflow-hidden">
+                <div className="hero-row hero-row-left">
+                  {[1, 2].map((loop) => (
+                    <div key={loop} className="flex gap-5">
+                      <div className="hero-card w-64 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
+                        <div className="relative aspect-[16/11]">
+                          <Image src="/hero1.webp" alt="Preview" fill sizes="256px" className="object-cover" />
+                        </div>
+                      </div>
+                      <div className="hero-card w-64 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
+                        <div className="relative aspect-[16/11]">
+                          <Image src="/hero1.webp" alt="Preview" fill sizes="256px" className="object-cover" />
+                        </div>
+                      </div>
+                      <div className="hero-card w-64 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
+                        <div className="relative aspect-[16/11]">
+                          <Image src="/hero1.webp" alt="Preview" fill sizes="256px" className="object-cover" />
+                        </div>
+                      </div>
                     </div>
-                  </div>
-
-                  <div className="hero-card overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
-                    <div className="relative aspect-[16/11]">
-                      <Image src="/hero1.webp" alt="Preview" fill sizes="(min-width:1024px) 360px, 100vw" className="object-cover" />
-                    </div>
-                  </div>
-
-                  <div className="hero-card overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
-                    <div className="relative aspect-[16/11]">
-                      <Image src="/hero1.webp" alt="Preview" fill sizes="(min-width:1024px) 360px, 100vw" className="object-cover" />
-                    </div>
-                  </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+
+              <div className="overflow-hidden">
+                <div className="hero-row hero-row-right">
+                  {[1, 2].map((loop) => (
+                    <div key={loop} className="flex gap-5">
+                      <div className="hero-card w-64 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
+                        <div className="relative aspect-[16/11]">
+                          <Image src="/hero1.webp" alt="Preview" fill sizes="256px" className="object-cover" />
+                        </div>
+                      </div>
+                      <div className="hero-card w-64 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
+                        <div className="relative aspect-[16/11]">
+                          <Image src="/hero1.webp" alt="Preview" fill sizes="256px" className="object-cover" />
+                        </div>
+                      </div>
+                      <div className="hero-card w-64 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
+                        <div className="relative aspect-[16/11]">
+                          <Image src="/hero1.webp" alt="Preview" fill sizes="256px" className="object-cover" />
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
+          </div>
 
-            {/* Column 2 - scrolls down */}
-            <div className="hero-column hero-column-down w-1/2">
-              {[1, 2].map((loop) => (
-                <div key={loop} className="flex flex-col gap-6">
-                  <div className="hero-card overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
-                    <div className="relative aspect-[16/11]">
-                      <Image src="/hero1.webp" alt="Preview" fill sizes="(min-width:1024px) 360px, 100vw" className="object-cover" />
+          <div className="hidden lg:block">
+            <div className="flex h-[520px] gap-6 overflow-hidden">
+              {/* Column 1 - scrolls up */}
+              <div className="hero-column hero-column-up w-1/2">
+                {[1, 2].map((loop) => (
+                  <div key={loop} className="flex flex-col gap-6">
+                    <div className="hero-card overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
+                      <div className="relative aspect-[16/11]">
+                        <Image src="/hero1.webp" alt="Preview" fill sizes="(min-width:1024px) 360px, 100vw" className="object-cover" />
+                      </div>
+                    </div>
+
+                    <div className="hero-card overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
+                      <div className="relative aspect-[16/11]">
+                        <Image src="/hero1.webp" alt="Preview" fill sizes="(min-width:1024px) 360px, 100vw" className="object-cover" />
+                      </div>
+                    </div>
+
+                    <div className="hero-card overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
+                      <div className="relative aspect-[16/11]">
+                        <Image src="/hero1.webp" alt="Preview" fill sizes="(min-width:1024px) 360px, 100vw" className="object-cover" />
+                      </div>
                     </div>
                   </div>
+                ))}
+              </div>
 
-                  <div className="hero-card overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
-                    <div className="relative aspect-[16/11]">
-                      <Image src="/hero1.webp" alt="Preview" fill sizes="(min-width:1024px) 360px, 100vw" className="object-cover" />
+              {/* Column 2 - scrolls down */}
+              <div className="hero-column hero-column-down w-1/2">
+                {[1, 2].map((loop) => (
+                  <div key={loop} className="flex flex-col gap-6">
+                    <div className="hero-card overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
+                      <div className="relative aspect-[16/11]">
+                        <Image src="/hero1.webp" alt="Preview" fill sizes="(min-width:1024px) 360px, 100vw" className="object-cover" />
+                      </div>
+                    </div>
+
+                    <div className="hero-card overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
+                      <div className="relative aspect-[16/11]">
+                        <Image src="/hero1.webp" alt="Preview" fill sizes="(min-width:1024px) 360px, 100vw" className="object-cover" />
+                      </div>
+                    </div>
+
+                    <div className="hero-card overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
+                      <div className="relative aspect-[16/11]">
+                        <Image src="/hero1.webp" alt="Preview" fill sizes="(min-width:1024px) 360px, 100vw" className="object-cover" />
+                      </div>
                     </div>
                   </div>
-
-                  <div className="hero-card overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.55)]">
-                    <div className="relative aspect-[16/11]">
-                      <Image src="/hero1.webp" alt="Preview" fill sizes="(min-width:1024px) 360px, 100vw" className="object-cover" />
-                    </div>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>

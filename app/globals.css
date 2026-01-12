@@ -132,6 +132,23 @@
     gap: 1.5rem;
   }
 
+  .hero-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    width: max-content;
+  }
+
+  .hero-row-left {
+    animation: hero-marquee-left 28s linear infinite;
+    will-change: transform;
+  }
+
+  .hero-row-right {
+    animation: hero-marquee-right 28s linear infinite;
+    will-change: transform;
+  }
+
   .hero-column-up {
     animation: hero-scroll-up 26s linear infinite;
   }
@@ -252,5 +269,23 @@
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+@keyframes hero-marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes hero-marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }

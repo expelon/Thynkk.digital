@@ -251,12 +251,8 @@ export default function ScrollRevealSection({
             <h2 ref={panel2TitleRef} className="text-6xl font-light tracking-tight text-white sm:text-7xl md:text-8xl">
               DISCOVER
             </h2>
-            <p ref={panel2BodyRef} className="mt-6 text-sm leading-relaxed text-white/70">
-              Discover the intersections of strategy, design, and technology.
-              <br />
-              We uncover opportunities hidden in your customer journeys
-              <br />
-              and turn them into experiences that move your business forward.
+            <p ref={panel2BodyRef} className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-base">
+              Discover the intersections of strategy, design, and technology. We uncover opportunities hidden in your customer journeys and turn them into experiences that move your business forward.
             </p>
             <Link
               ref={panel2LinkRef}
@@ -274,12 +270,8 @@ export default function ScrollRevealSection({
             <h2 ref={panel3TitleRef} className="text-6xl font-light tracking-tight text-white sm:text-7xl md:text-8xl">
               DESIGN
             </h2>
-            <p ref={panel3BodyRef} className="mt-6 text-sm leading-relaxed text-white/70">
-              Design is the bridge between imagination and reality.
-              <br />
-              We craft visual stories that resonate,
-              <br />
-              creating experiences that connect with your audience on a deeper level.
+            <p ref={panel3BodyRef} className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-base">
+              Design is the bridge between imagination and reality. We craft visual stories that resonate, creating experiences that connect with your audience on a deeper level.
             </p>
             <a
               ref={panel3LinkRef}
@@ -297,12 +289,8 @@ export default function ScrollRevealSection({
             <h2 ref={panel4TitleRef} className="text-6xl font-light tracking-tight text-white sm:text-7xl md:text-8xl">
               DEVELOP
             </h2>
-            <p ref={panel4BodyRef} className="mt-6 text-sm leading-relaxed text-white/70">
-              Development is where ideas become functional reality.
-              <br />
-              We build robust, scalable solutions
-              <br />
-              that power your digital presence and drive growth.
+            <p ref={panel4BodyRef} className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-base">
+              Development is where ideas become functional reality. We build robust, scalable solutions that power your digital presence and drive growth.
             </p>
             <a
               ref={panel4LinkRef}
@@ -320,12 +308,8 @@ export default function ScrollRevealSection({
             <h2 ref={panel5TitleRef} className="text-6xl font-light tracking-tight text-white sm:text-7xl md:text-8xl">
               SECURE
             </h2>
-            <p ref={panel5BodyRef} className="mt-6 text-sm leading-relaxed text-white/70">
-              Security is the foundation of trust in the digital world.
-              <br />
-              We protect your assets and data with
-              <br />
-              enterprise-grade security measures and best practices.
+            <p ref={panel5BodyRef} className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-base">
+              Security is the foundation of trust in the digital world. We protect your assets and data with enterprise-grade security measures and best practices.
             </p>
             <a
               ref={panel5LinkRef}
@@ -343,12 +327,8 @@ export default function ScrollRevealSection({
             <h2 ref={panel6TitleRef} className="text-6xl font-light tracking-tight text-white sm:text-7xl md:text-8xl">
               SCALE
             </h2>
-            <p ref={panel6BodyRef} className="mt-6 text-sm leading-relaxed text-white/70">
-              Scaling is about growing without losing quality or performance.
-              <br />
-              We help you expand your reach and capacity
-              <br />
-              while maintaining the excellence that defines your brand.
+            <p ref={panel6BodyRef} className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-base">
+              Scaling is about growing without losing quality or performance. We help you expand your reach and capacity while maintaining the excellence that defines your brand.
             </p>
             <a
               ref={panel6LinkRef}
