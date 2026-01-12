@@ -7,7 +7,13 @@ import gsap from 'gsap';
 
 const menuItems = ['Services', 'Solutions', 'Industries', 'Works', 'About', 'Careers'];
 
-export default function Navbar() {
+type NavbarVariant = 'glass' | 'black';
+
+interface NavbarProps {
+  variant?: NavbarVariant;
+}
+
+export default function Navbar({ variant = 'glass' }: NavbarProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navRef = useRef<HTMLElement>(null);
   const menuItemsRef = useRef<HTMLDivElement>(null);
@@ -79,7 +85,9 @@ export default function Navbar() {
     <>
       <nav
         ref={navRef}
-        className="fixed top-0 left-0 right-0 z-50 bg-black/10 backdrop-blur-xl border-b border-white/10"
+        className={`fixed top-0 left-0 right-0 z-50 border-b border-white/10 ${
+          variant === 'glass' ? 'bg-black/10 backdrop-blur-xl' : 'bg-black'
+        }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">

@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
-import { useEffect, useMemo, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Link from "next/link";
+import { useEffect, useMemo, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 type ScrollRevealSectionProps = {
   text?: string;
@@ -257,14 +258,14 @@ export default function ScrollRevealSection({
               <br />
               and turn them into experiences that move your business forward.
             </p>
-            <a
+            <Link
               ref={panel2LinkRef}
-              href="#learn-more"
+              href="/discover"
               className="mt-8 inline-flex items-center gap-2 border border-white/40 px-5 py-2 text-sm text-white/80 transition hover:border-white hover:bg-white/5 hover:text-white"
             >
               Learn more
               <span aria-hidden="true">→</span>
-            </a>
+            </Link>
           </div>
         </div>
 

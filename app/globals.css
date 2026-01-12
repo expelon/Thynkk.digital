@@ -125,6 +125,20 @@
     animation: orb-particles 6s ease-in-out infinite;
     will-change: opacity, transform;
   }
+
+  .hero-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hero-column-up {
+    animation: hero-scroll-up 26s linear infinite;
+  }
+
+  .hero-column-down {
+    animation: hero-scroll-down 26s linear infinite;
+  }
 }
 
 @keyframes hero-zoom {
@@ -220,5 +234,23 @@
   100% {
     opacity: 0.35;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes hero-scroll-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes hero-scroll-down {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }
