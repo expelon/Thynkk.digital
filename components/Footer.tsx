@@ -97,8 +97,8 @@ export default function Footer() {
               />
             </div>
             <p className="mt-4 text-sm leading-relaxed text-white/60">
-              We champion the bold to achieve the extraordinary. Transforming
-              businesses through innovation and strategic excellence.
+              thynkk.digital crafts digital experiences at the intersection of strategy, design, and technology.
+              We turn bold ideas into reality with precision and creativity.
             </p>
           </div>
 
@@ -127,7 +127,7 @@ export default function Footer() {
                 <div className="text-sm text-white/60">Sales Enquiry</div>
                 <div className="text-sm text-white/60">Email</div>
                 <div className="text-sm text-white/60">HR Enquiry</div>
-                <div className="text-sm text-white/60">Whatsapp ( Sales )</div>
+                <div className="text-sm text-white/60">WhatsApp (Sales)</div>
               </div>
               <div className="space-y-4">
                 <a href="tel:+914802733111" className="block text-sm text-white/60 transition hover:text-white">
@@ -137,10 +137,10 @@ export default function Footer() {
                   : +91 480 2733 555
                 </a>
                 <a
-                  href="mailto:info@webandcrafts.com"
+                  href="mailto:info@thynkk.digital"
                   className="block text-sm text-white/60 transition hover:text-white"
                 >
-                  : info@webandcrafts.com
+                  : info@thynkk.digital
                 </a>
                 <a href="tel:+914802733999" className="block text-sm text-white/60 transition hover:text-white">
                   : +91 480 2733 999
